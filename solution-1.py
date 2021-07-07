@@ -1,8 +1,10 @@
-words = input("Put some words in! ").split()
 
-unique_words = set(words)
-sorted_words = sorted(unique_words, key=str.lower)
+def alphasort(string):
+    words = string.split()
 
-output = " ".join(sorted_words)
+    unique_words = set(words)
+    sorted_words = sorted(unique_words, key=str.lower)
 
-print(output)
+    output = " ".join(sorted_words)
+
+    return output
